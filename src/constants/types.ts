@@ -4,6 +4,6 @@ export type Weather = {
     temp_min: number;
     humidity: number;
     city: string;
-    time?: string;
+    time: string;
     cloud_status?: string;
 }

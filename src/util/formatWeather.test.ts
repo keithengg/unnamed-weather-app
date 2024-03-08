@@ -18,9 +18,9 @@ describe("formatWeather", () => {
     }
 
     const mockResults = {
-        temp: 100,
-        temp_max: 100,
-        temp_min: 100,
+        temp: -173.1,
+        temp_max: -173.1,
+        temp_min: -173.1,
         humidity: 100,
         city: "name, country",
         cloud_status: "cloudy",

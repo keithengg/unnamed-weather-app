@@ -11,6 +11,7 @@ describe("<WeatherDisplay />", () => {
         humidity: 100,
         city: "name, country",
         cloud_status: "cloudy",
+        time: ""
     }
 
     it('should render correctly and match snapshot', () => {
