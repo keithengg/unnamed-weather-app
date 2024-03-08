@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render correctly and match snapshot 1`] = `
+<div>
+  <div>
+    <label
+      for="location"
+    >
+      Enter Country/City
+    </label>
+    <input
+      name="location"
+      type="text"
+      value=""
+    />
+    <button
+      type="button"
+    >
+      Search
+    </button>
+  </div>
+</div>
+`;
