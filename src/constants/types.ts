@@ -7,3 +7,8 @@ export type Weather = {
     time: string;
     cloud_status?: string;
 }
+
+export type History = {
+    city: string;
+    time: string;
+}
