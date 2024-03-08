@@ -16,7 +16,7 @@ const Search: React.FC<Props> = (props) => {
                 value={props.location}
                 onChange={(e) => props.handleUpdate(e.target.value)}
             />
-            <button onClick={props.handleClick} type="button">Search</button>
+            <button onClick={props.handleClick} type="button" aria-label="Search">Search</button>
         </>
     )
 }

@@ -13,6 +13,7 @@ exports[`<Search /> should render correctly and match snapshot 1`] = `
     value=""
   />
   <button
+    aria-label="Search"
     type="button"
   >
     Search

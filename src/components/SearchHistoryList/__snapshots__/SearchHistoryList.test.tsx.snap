@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchHistoryList /> should render correctly and match snapshot 1`] = `
+<div>
+  <ul>
+    <li
+      class="flex"
+    >
+      <div
+        class="flex"
+      >
+        <p>
+          Singapore
+        </p>
+        <p>
+          9:00AM
+        </p>
+      </div>
+      <button
+        aria-label="Search for Singapore"
+        type="button"
+      >
+        Search
+      </button>
+      <button
+        aria-label="Delete Singapore history"
+        type="button"
+      >
+        Delete
+      </button>
+    </li>
+    <li
+      class="flex"
+    >
+      <div
+        class="flex"
+      >
+        <p>
+          Malaysia
+        </p>
+        <p>
+          10:00AM
+        </p>
+      </div>
+      <button
+        aria-label="Search for Malaysia"
+        type="button"
+      >
+        Search
+      </button>
+      <button
+        aria-label="Delete Malaysia history"
+        type="button"
+      >
+        Delete
+      </button>
+    </li>
+    <li
+      class="flex"
+    >
+      <div
+        class="flex"
+      >
+        <p>
+          Thailand
+        </p>
+        <p>
+          11:00AM
+        </p>
+      </div>
+      <button
+        aria-label="Search for Thailand"
+        type="button"
+      >
+        Search
+      </button>
+      <button
+        aria-label="Delete Thailand history"
+        type="button"
+      >
+        Delete
+      </button>
+    </li>
+    <li
+      class="flex"
+    >
+      <div
+        class="flex"
+      >
+        <p>
+          Vietnam
+        </p>
+        <p>
+          12:00PM
+        </p>
+      </div>
+      <button
+        aria-label="Search for Vietnam"
+        type="button"
+      >
+        Search
+      </button>
+      <button
+        aria-label="Delete Vietnam history"
+        type="button"
+      >
+        Delete
+      </button>
+    </li>
+  </ul>
+</div>
+`;

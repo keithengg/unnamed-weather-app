@@ -14,10 +14,12 @@ exports[`<App /> should render correctly and match snapshot 1`] = `
       value=""
     />
     <button
+      aria-label="Search"
       type="button"
     >
       Search
     </button>
+    <ul />
   </div>
 </div>
 `;
