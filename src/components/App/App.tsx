@@ -11,6 +11,7 @@ import { formatWeather } from "../../util";
 import './App.scss';
 
 const App: React.FC = () => {
+	const [isLoading, setIsLoading] = useState(false)
 	const [location, setLocation] = useState("")
 	const [searchHistory, setSearchHistory] = useState<History[]>([]);
 	const [weatherData, setWeatherData] = useState<Weather>() // Opted to use useState and simple prop drilling as application is not deeply nested
@@ -35,10 +36,11 @@ const App: React.FC = () => {
 		setLocation(location)
 	}
 
-	const handleClick = () => {
+	const handleClick = async () => {
 		if (!location) return;
+		setIsLoading(true);
 
-		getWeather(location)
+		await getWeather(location)
 			.then(data => formatWeather(data))
 			.then(formattedData => {
 				const history: History = {
@@ -53,6 +55,7 @@ const App: React.FC = () => {
 				console.error(error)
 				return error
 			})
+		setIsLoading(false);
 	}
 
 	const handleDelete = (index: number) => {
