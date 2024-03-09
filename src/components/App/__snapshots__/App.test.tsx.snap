@@ -53,7 +53,15 @@ exports[`<App /> should render correctly and match snapshot 1`] = `
           </svg>
         </button>
       </div>
-      <ul />
+      <div
+        class="body__container"
+      >
+        <div
+          class="history__container"
+        >
+          <ul />
+        </div>
+      </div>
     </div>
   </div>
 </div>

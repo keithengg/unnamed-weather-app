@@ -65,12 +65,16 @@ const App: React.FC = () => {
 		<div className={`main ${time > 18 ? 'main--dark' : ''}`}>
 			<div className="main__container">
 				<Search location={location} handleUpdate={handleUpdate} handleClick={handleClick} />
-				{weatherData && <WeatherDisplay weatherData={weatherData} />}
-				<SearchHistoryList
-					searchHistory={searchHistory}
-					handleDelete={handleDelete}
-					handleSearch={handleSearch}
-				/>
+				<div className="body__container">
+					{weatherData && <WeatherDisplay weatherData={weatherData} />}
+					<div className="history__container">
+						<SearchHistoryList
+							searchHistory={searchHistory}
+							handleDelete={handleDelete}
+							handleSearch={handleSearch}
+						/>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
