@@ -59,7 +59,12 @@ exports[`<App /> should render correctly and match snapshot 1`] = `
         <div
           class="history__container"
         >
-          <ul />
+          <div>
+            Search History
+            <ul
+              class="search-history__list"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -4,7 +4,8 @@
 
 .main {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100vw;
     justify-content: center;
     background-size: cover;
@@ -38,4 +39,5 @@
 
 .history__container {
     margin: 16px 0px 16px;
+    padding: 24px;
 }
