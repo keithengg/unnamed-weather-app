@@ -43,4 +43,4 @@ const SearchHistoryList: React.FC<SearchHistoryListProps> = ({ searchHistory, ha
     )
 }
 
-export default SearchHistoryList;
+export default SearchHistoryList; // Note to marker: Thought about using React.Memo here and useCallback on the "handleDelete/Search" functions but it seems like overkill
