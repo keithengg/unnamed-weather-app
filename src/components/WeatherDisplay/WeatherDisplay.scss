@@ -1,0 +1,45 @@
+.weather-display {
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    &__left-container {
+        display: flex;
+        flex-direction: column;
+        gap: 4px
+    }
+
+    &__right-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 4px;
+    }
+
+    &__temp {
+        color: #6940b9;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 100%;
+    }
+
+    &__city {
+        font-weight: bold;
+    }
+
+    &__image {
+        position: absolute;
+        top: -120px;
+        right: -20px;
+        height: 220px;
+
+        @media only screen and (min-width: 767px) {
+            top: -160px;
+            right: 0;
+            height: 320px;
+        }
+    }
+}

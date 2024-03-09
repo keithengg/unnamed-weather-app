@@ -2,111 +2,246 @@
 
 exports[`<SearchHistoryList /> should render correctly and match snapshot 1`] = `
 <div>
-  <ul>
-    <li
-      class="flex"
-    >
-      <div
-        class="flex"
+  <div>
+    Search History
+    <ul>
+      <li
+        class="search-history__item"
       >
-        <p>
-          Singapore
-        </p>
-        <p>
-          9:00AM
-        </p>
-      </div>
-      <button
-        aria-label="Search for Singapore"
-        type="button"
+        <div
+          class="flex flex-col"
+        >
+          <p>
+            Singapore
+          </p>
+          <p>
+            9:00AM
+          </p>
+        </div>
+        <div
+          class="flex gap-x-2"
+        >
+          <button
+            aria-label="Search for Singapore"
+            class="search-history__button"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Delete Singapore history"
+            class="search-history__button"
+            type="button"
+          >
+            <svg
+              fill="currentColor"
+              height="24"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+              />
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li
+        class="search-history__item"
       >
-        Search
-      </button>
-      <button
-        aria-label="Delete Singapore history"
-        type="button"
+        <div
+          class="flex flex-col"
+        >
+          <p>
+            Malaysia
+          </p>
+          <p>
+            10:00AM
+          </p>
+        </div>
+        <div
+          class="flex gap-x-2"
+        >
+          <button
+            aria-label="Search for Malaysia"
+            class="search-history__button"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Delete Malaysia history"
+            class="search-history__button"
+            type="button"
+          >
+            <svg
+              fill="currentColor"
+              height="24"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+              />
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li
+        class="search-history__item"
       >
-        Delete
-      </button>
-    </li>
-    <li
-      class="flex"
-    >
-      <div
-        class="flex"
+        <div
+          class="flex flex-col"
+        >
+          <p>
+            Thailand
+          </p>
+          <p>
+            11:00AM
+          </p>
+        </div>
+        <div
+          class="flex gap-x-2"
+        >
+          <button
+            aria-label="Search for Thailand"
+            class="search-history__button"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Delete Thailand history"
+            class="search-history__button"
+            type="button"
+          >
+            <svg
+              fill="currentColor"
+              height="24"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+              />
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li
+        class="search-history__item"
       >
-        <p>
-          Malaysia
-        </p>
-        <p>
-          10:00AM
-        </p>
-      </div>
-      <button
-        aria-label="Search for Malaysia"
-        type="button"
-      >
-        Search
-      </button>
-      <button
-        aria-label="Delete Malaysia history"
-        type="button"
-      >
-        Delete
-      </button>
-    </li>
-    <li
-      class="flex"
-    >
-      <div
-        class="flex"
-      >
-        <p>
-          Thailand
-        </p>
-        <p>
-          11:00AM
-        </p>
-      </div>
-      <button
-        aria-label="Search for Thailand"
-        type="button"
-      >
-        Search
-      </button>
-      <button
-        aria-label="Delete Thailand history"
-        type="button"
-      >
-        Delete
-      </button>
-    </li>
-    <li
-      class="flex"
-    >
-      <div
-        class="flex"
-      >
-        <p>
-          Vietnam
-        </p>
-        <p>
-          12:00PM
-        </p>
-      </div>
-      <button
-        aria-label="Search for Vietnam"
-        type="button"
-      >
-        Search
-      </button>
-      <button
-        aria-label="Delete Vietnam history"
-        type="button"
-      >
-        Delete
-      </button>
-    </li>
-  </ul>
+        <div
+          class="flex flex-col"
+        >
+          <p>
+            Vietnam
+          </p>
+          <p>
+            12:00PM
+          </p>
+        </div>
+        <div
+          class="flex gap-x-2"
+        >
+          <button
+            aria-label="Search for Vietnam"
+            class="search-history__button"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Delete Vietnam history"
+            class="search-history__button"
+            type="button"
+          >
+            <svg
+              fill="currentColor"
+              height="24"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+              />
+            </svg>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
 `;

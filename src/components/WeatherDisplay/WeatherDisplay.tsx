@@ -1,5 +1,9 @@
 import React from "react";
 import { Weather } from '../../constants/types'
+import './WeatherDisplay.scss';
+
+const NightImage = require('../../assets/cloud.png');
+const SunImage = require('../../assets/sun.png');
 
 interface Props {
     weatherData: Weather
@@ -8,25 +12,32 @@ interface Props {
 const WeatherDisplay: React.FC<Props> = ({ weatherData }) => {
     const { temp, temp_max, temp_min, city, humidity, cloud_status, time } = weatherData;
 
+    const isDay = new Date().getHours() <= 17; // Check if it's before 5:00 PM
+
     return (
-        <>
+        <div className="relative">
             <h1>Today's Weather</h1>
-            <div className="flex">
-                <div>
-                    <h2>{temp}</h2>
-                    <div className="flex">
-                        {temp_max && <p>H: {temp_max}</p>}
-                        {temp_min && <p>L: {temp_min}</p>}
+            <div className="weather-display__container">
+                <div className="weather-display__left-container">
+                    <h2 className="weather-display__temp">{temp}&deg;</h2>
+                    <div className="flex gap-x-2">
+                        {temp_max && <p>H: {temp_max}&deg;</p>}
+                        {temp_min && <p>L: {temp_min}&deg;</p>}
                     </div>
-                    <h3>{city}</h3>
+                    <h3 className="weather-display__city">{city}</h3>
                 </div>
-                <div>
+                <div className="weather-display__right-container">
                     <p>{cloud_status}</p>
                     <p>Humidity: {humidity}%</p>
                     <p>{time}</p>
                 </div>
             </div>
-        </>
+            <img
+                src={isDay ? SunImage : NightImage}
+                className="weather-display__image"
+                alt={isDay ? 'Graphical Image of a sun behind a cloud' : 'Graphical Image of a cloud'}
+            />
+        </div>
     )
 }
 

@@ -9,9 +9,9 @@ export function formatWeather(data: any) {
 
     try {
         const formattedData: Weather = {
-            temp: Math.round((main.temp - ABSOLUTE_ZERO) * 10) / 10,
-            temp_max: Math.round((main.temp_max - ABSOLUTE_ZERO) * 10) / 10,
-            temp_min: Math.round((main.temp_min - ABSOLUTE_ZERO) * 10) / 10,
+            temp: Math.round((main.temp - ABSOLUTE_ZERO) * 1) / 1,
+            temp_max: Math.round((main.temp_max - ABSOLUTE_ZERO) * 1) / 1,
+            temp_min: Math.round((main.temp_min - ABSOLUTE_ZERO) * 1) / 1,
             humidity: main.humidity,
             city: `${name}${sys?.country ? `, ${sys.country}` : ``}`,
             time: moment().format('DD-MM-YYYY hh:mm a'), // Assuming we want current time for User, not current time at Location

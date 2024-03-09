@@ -2,43 +2,63 @@
 
 exports[`<WeatherDisplay /> should render correctly and match snapshot 1`] = `
 <div>
-  <h1>
-    Today's Weather
-  </h1>
   <div
-    class="flex"
+    class="relative"
   >
-    <div>
-      <h2>
-        100
-      </h2>
+    <h1>
+      Today's Weather
+    </h1>
+    <div
+      class="weather-display__container"
+    >
       <div
-        class="flex"
+        class="weather-display__left-container"
+      >
+        <h2
+          class="weather-display__temp"
+        >
+          100
+          °
+        </h2>
+        <div
+          class="flex gap-x-2"
+        >
+          <p>
+            H: 
+            100
+            °
+          </p>
+          <p>
+            L: 
+            100
+            °
+          </p>
+        </div>
+        <h3
+          class="weather-display__city"
+        >
+          name, country
+        </h3>
+      </div>
+      <div
+        class="weather-display__right-container"
       >
         <p>
-          H: 
-          100
+          cloudy
         </p>
         <p>
-          L: 
+          Humidity: 
           100
+          %
         </p>
+        <p />
       </div>
-      <h3>
-        name, country
-      </h3>
     </div>
-    <div>
-      <p>
-        cloudy
-      </p>
-      <p>
-        Humidity: 
-        100
-        %
-      </p>
-      <p />
-    </div>
+    <img
+      alt="Graphical Image of a sun behind a cloud"
+      class="weather-display__image"
+      src="sun.png"
+    />
   </div>
 </div>
 `;
