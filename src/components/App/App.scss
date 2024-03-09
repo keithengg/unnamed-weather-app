@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    background-size: cover;
+    background-image: url(../../assets/bg-light.png);
+
+    &--dark {
+        background-image: url(../../assets/bg-dark.png);
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 32px 0px;
+        width: 100%;
+        max-width: 740px;
+    }
+}

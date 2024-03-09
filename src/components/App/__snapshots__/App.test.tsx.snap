@@ -2,24 +2,30 @@
 
 exports[`<App /> should render correctly and match snapshot 1`] = `
 <div>
-  <div>
-    <label
-      for="location"
+  <div
+    class="main "
+  >
+    <div
+      class="main__container"
     >
-      Enter Country/City
-    </label>
-    <input
-      name="location"
-      type="text"
-      value=""
-    />
-    <button
-      aria-label="Search"
-      type="button"
-    >
-      Search
-    </button>
-    <ul />
+      <label
+        for="location"
+      >
+        Enter Country/City
+      </label>
+      <input
+        name="location"
+        type="text"
+        value=""
+      />
+      <button
+        aria-label="Search"
+        type="button"
+      >
+        Search
+      </button>
+      <ul />
+    </div>
   </div>
 </div>
 `;

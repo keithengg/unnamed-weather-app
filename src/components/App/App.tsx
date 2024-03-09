@@ -59,15 +59,19 @@ const App: React.FC = () => {
 		setSearchHistory((prevState) => prevState.filter((_, i) => i !== index))
 	}
 
+	const time = new Date().getHours();
+
 	return (
-		<div>
-			<Search location={location} handleUpdate={handleUpdate} handleClick={handleClick} />
-			{weatherData && <WeatherDisplay weatherData={weatherData} />}
-			<SearchHistoryList
-				searchHistory={searchHistory}
-				handleDelete={handleDelete}
-				handleSearch={handleSearch}
-			/>
+		<div className={`main ${time > 18 ? 'main--dark' : ''}`}>
+			<div className="main__container">
+				<Search location={location} handleUpdate={handleUpdate} handleClick={handleClick} />
+				{weatherData && <WeatherDisplay weatherData={weatherData} />}
+				<SearchHistoryList
+					searchHistory={searchHistory}
+					handleDelete={handleDelete}
+					handleSearch={handleSearch}
+				/>
+			</div>
 		</div>
 	);
 }
