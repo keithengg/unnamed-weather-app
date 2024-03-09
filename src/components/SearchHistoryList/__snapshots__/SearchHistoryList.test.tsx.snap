@@ -4,9 +4,7 @@ exports[`<SearchHistoryList /> should render correctly and match snapshot 1`] = 
 <div>
   <div>
     Search History
-    <ul
-      class="search-history__list"
-    >
+    <ul>
       <li
         class="search-history__item"
       >

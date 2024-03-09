@@ -51,7 +51,7 @@ const SearchHistoryList: React.FC<SearchHistoryListProps> = ({ searchHistory, ha
     return (
         <div>
             Search History
-            <ul className="search-history__list">
+            <ul>
                 {searchHistory && searchHistory.map((history, index) => {
                     return (
                         <SearchHistory

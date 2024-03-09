@@ -21,15 +21,15 @@ const WeatherDisplay: React.FC<Props> = ({ weatherData }) => {
                 <div className="weather-display__left-container">
                     <h2 className="weather-display__temp">{temp}&deg;</h2>
                     <div className="flex gap-x-2">
-                        {temp_max && <p className="weather-display__temp-max">H: {temp_max}&deg;</p>}
-                        {temp_min && <p className="weather-display__temp-min">L: {temp_min}&deg;</p>}
+                        {temp_max && <p>H: {temp_max}&deg;</p>}
+                        {temp_min && <p>L: {temp_min}&deg;</p>}
                     </div>
                     <h3 className="weather-display__city">{city}</h3>
                 </div>
                 <div className="weather-display__right-container">
-                    <p className="weather-display__cloud">{cloud_status}</p>
-                    <p className="weather-display__humidity">Humidity: {humidity}%</p>
-                    <p className="weather-display__time">{time}</p>
+                    <p>{cloud_status}</p>
+                    <p>Humidity: {humidity}%</p>
+                    <p>{time}</p>
                 </div>
             </div>
             <img

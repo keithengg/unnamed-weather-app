@@ -23,16 +23,12 @@ exports[`<WeatherDisplay /> should render correctly and match snapshot 1`] = `
         <div
           class="flex gap-x-2"
         >
-          <p
-            class="weather-display__temp-max"
-          >
+          <p>
             H: 
             100
             °
           </p>
-          <p
-            class="weather-display__temp-min"
-          >
+          <p>
             L: 
             100
             °
@@ -47,21 +43,15 @@ exports[`<WeatherDisplay /> should render correctly and match snapshot 1`] = `
       <div
         class="weather-display__right-container"
       >
-        <p
-          class="weather-display__cloud"
-        >
+        <p>
           cloudy
         </p>
-        <p
-          class="weather-display__humidity"
-        >
+        <p>
           Humidity: 
           100
           %
         </p>
-        <p
-          class="weather-display__time"
-        />
+        <p />
       </div>
     </div>
     <img
