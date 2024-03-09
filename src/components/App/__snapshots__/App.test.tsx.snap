@@ -8,22 +8,51 @@ exports[`<App /> should render correctly and match snapshot 1`] = `
     <div
       class="main__container"
     >
-      <label
-        for="location"
+      <div
+        class="flex"
       >
-        Enter Country/City
-      </label>
-      <input
-        name="location"
-        type="text"
-        value=""
-      />
-      <button
-        aria-label="Search"
-        type="button"
-      >
-        Search
-      </button>
+        <div
+          class="search__container"
+        >
+          <label
+            class="search__label "
+            for="location"
+          >
+            Enter Country/City
+          </label>
+          <input
+            class="search__input"
+            name="location"
+            type="text"
+            value=""
+          />
+        </div>
+        <button
+          aria-label="Search"
+          class="search__button"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            aria-label="Search Icon"
+            color="white"
+            fill="none"
+            height="32"
+            stroke="currentColor"
+            stroke-width="1.5"
+            style="color: white;"
+            viewBox="0 0 24 24"
+            width="32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
       <ul />
     </div>
   </div>
